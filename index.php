@@ -16,7 +16,7 @@
 <body>
     <h1>
         <?php
-            echo $name . ' ' . $lastName;  
+            echo "Hola $name $lastName";  
         ?>
     </h1>
 </body>
