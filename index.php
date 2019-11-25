@@ -1,3 +1,8 @@
+<?php
+    $name = 'Santiago';
+    $lastName = 'Pinilla';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +15,9 @@
 
 <body>
     <h1>
-        <?php echo 'Hola';?>
+        <?php
+            echo $name . ' ' . $lastName;  
+        ?>
     </h1>
 </body>
 
