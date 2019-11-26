@@ -1,9 +1,5 @@
 <?php
-// Variables.
-    $name = 'Santiago';
-    $lastName = 'Pinilla';
-//Arrays.
-    $job = ['Frontend Developer','UX Designer'];
+    include_once('signUp.php');
 ?>
 
 <!DOCTYPE html>
@@ -18,14 +14,13 @@
 
 <body>
     <h1>
-        <?php
-            echo "Hola $name $lastName";  
-        ?>
+        HELI-REP
     </h1>
     </br>
     <h2>
+        Hola
         <?php
-            echo ($job[0]);
+            echo " $user_1->name $user_1->lastName";
         ?>
     </h2>
 </body>
