@@ -1,5 +1,5 @@
 <?php
-    include('db.php')
+    include("db.php");
 ?>
 <?php
     include('includes/header.php')
@@ -63,8 +63,11 @@
                                     echo $row['created_at']?>
                                 </td>
                                 <td>
-                                    <a href="edit.php?id=<?php $row['id']?>">
-                                        Editar
+                                    <a href="edit.php?id=<?php echo $row['id']?>" class="btn btn-secondary">
+                                        <i class="fas fa-marker">Editar</i>
+                                    </a>
+                                    <a href="delete_task.php?id=<?php echo $row['id']?>" class="btn btn-danger">
+                                    <i class="fas fa-marker">Eliminar</i>
                                     </a>
                                 </td>
                             </tr>
