@@ -1,6 +1,9 @@
 <?php
+// Variables.
     $name = 'Santiago';
     $lastName = 'Pinilla';
+//Arrays.
+    $job = ['Frontend Developer','UX Designer'];
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +22,12 @@
             echo "Hola $name $lastName";  
         ?>
     </h1>
+    </br>
+    <h2>
+        <?php
+            echo ($job[0]);
+        ?>
+    </h2>
 </body>
 
 </html>
