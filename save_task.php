@@ -11,6 +11,10 @@
         if (!$result) {
             die("Query failed");
         }
-        echo 'saved';
+        
+        $_SESSION['message'] = 'Producto guardado con exito.';
+        $_SESSION['message_type'] = 'success';
+
+        header("Location: index.php");
     }
 ?>
